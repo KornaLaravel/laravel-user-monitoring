@@ -194,3 +194,31 @@ test('store action monitoring when a model replicate with login user', function 
     assertDatabaseCount(config('user-monitoring.action_monitoring.table'), 3);
     assertDatabaseHas(config('user-monitoring.action_monitoring.table'), ['page' => url('/')]);
 });
+
+test('restore a model in acting monitoring', function () {
+    config()->set('user-monitoring.action_monitoring.on_restore', true);
+
+    $user = createUser();
+    auth()->login($user);
+
+    $product = \Tests\SetUp\Models\ProductSoftDelete::query()->create([
+        'title' => 'milwad',
+        'description' => 'WE ARE HELPING TO OPEN-SOURCE WORLD'
+    ]);
+
+    $product->delete();
+    $product->restore();
+
+    // Assertions
+    expect(ActionMonitoring::query()->value('table_name'))
+        ->toBe('products')
+        ->and(ActionMonitoring::query()->where('id', 4)->value('action_type'))
+        ->toBe(ActionType::ACTION_RESTORED)
+        ->and($user->name)
+        ->toBe(ActionMonitoring::first()->user->name);
+
+    // DB Assertions
+    assertDatabaseCount('products', 1);
+    assertDatabaseCount(config('user-monitoring.action_monitoring.table'), 4);
+    assertDatabaseHas(config('user-monitoring.action_monitoring.table'), ['page' => url('/')]);
+});
