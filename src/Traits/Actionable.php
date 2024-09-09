@@ -45,11 +45,11 @@ trait Actionable
             });
         }
 
-//        if (config('user-monitoring.action_monitoring.on_replicate', false)) {
-//            static::restored(function (mixed $model) {
-//                static::insertActionMonitoring($model, ActionType::ACTION_REPLICATE);
-//            });
-//        }TODO: Release next version
+        if (config('user-monitoring.action_monitoring.on_restore', false)) {
+            static::restored(function (mixed $model) {
+                static::insertActionMonitoring($model, ActionType::ACTION_RESTORED);
+            });
+        }
         /*
          * Events:
          * trashed
