@@ -91,7 +91,7 @@ return [
         'on_update'     => true,
         'on_destroy'    => true,
         'on_read'       => true,
-        'on_restore'    => false, // Release for next version :)
+        'on_restore'    => false,
         'on_replicate'  => false,
     ],
 
