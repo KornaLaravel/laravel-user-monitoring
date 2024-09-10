@@ -1,3 +1,13 @@
+## v1.1.3 - 2024-09-09
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/binafy/laravel-user-monitoring/pull/37
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by [@dependabot](https://github.com/dependabot) in https://github.com/binafy/laravel-user-monitoring/pull/40
+* [1.x] Add `SoftDelete` event to Actions by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/binafy/laravel-user-monitoring/pull/42
+
+**Full Changelog**: https://github.com/binafy/laravel-user-monitoring/compare/v1.1.2...v1.1.3
+
 ## v1.1.2 - 2024-04-11
 
 ### What's Changed
