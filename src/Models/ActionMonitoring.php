@@ -20,6 +20,21 @@ class ActionMonitoring extends Model
      */
     protected $guarded = ['id'];
 
+    # Methods
+
+    public function getTypeColor(): string
+    {
+        return match ($this->action_type) {
+            'read' => 'blue',
+            'store' => 'green',
+            'update' => 'purple',
+            'delete' => 'red',
+            'restore' => 'yellow',
+            'replicate' => 'pink',
+            default => 'gray',
+        };
+    }
+
     # Relations
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo

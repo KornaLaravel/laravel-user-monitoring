@@ -30,9 +30,9 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
                                 </svg>
-                                <p class="text-sm leading-none text-gray-600 ml-2">
+                                <span class="inline-flex items-center rounded-md bg-{{ $action->getTypeColor() }}-50 px-2 py-1 text-xs font-medium text-{{ $action->getTypeColor() }}-700 ring-1 ring-inset ring-{{ $action->getTypeColor() }}-600/10 ml-1">
                                     {{ $action->action_type }}
-                                </p>
+                                </span>
                             </div>
                         </td>
                         <td class="pl-5">
