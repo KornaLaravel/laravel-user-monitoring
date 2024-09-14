@@ -29,6 +29,8 @@ class ActionMonitoring extends Model
             'store' => 'green',
             'update' => 'purple',
             'delete' => 'red',
+            'restore' => 'yellow',
+            'replicate' => 'pink',
             default => 'gray',
         };
     }
