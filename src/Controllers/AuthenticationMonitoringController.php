@@ -20,6 +20,8 @@ class AuthenticationMonitoringController extends BaseController
             ->where('id', $id)
             ->delete();
 
-        return to_route('user-monitoring.authentications-monitoring');
+        return to_route('user-monitoring.authentications-monitoring')->with([
+            'message' => 'The action has been deleted.',
+        ]);
     }
 }
