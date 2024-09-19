@@ -1,3 +1,13 @@
+## v1.1.4 - 2024-09-19
+
+### What's Changed
+
+* [1.x] Add color for action type by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/binafy/laravel-user-monitoring/pull/43
+* [1.x] Add custom attribute for user name by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/binafy/laravel-user-monitoring/pull/44
+* [1.x] Add alert to controllers by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/binafy/laravel-user-monitoring/pull/45
+
+**Full Changelog**: https://github.com/binafy/laravel-user-monitoring/compare/v1.1.3...v1.1.4
+
 ## v1.1.3 - 2024-09-09
 
 ### What's Changed
