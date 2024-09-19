@@ -21,6 +21,6 @@ test('delete visits-monitoring route delete visit monitoring and redirect', func
     $response->assertRedirect(route('user-monitoring.visits-monitoring'));
 
     // DB Assertions
-    assertDatabaseCount(config('user-monitoring.visit_monitoring.table'), 1);
+    assertDatabaseCount(config('user-monitoring.visit_monitoring.table'), 0);
     assertDatabaseMissing(config('user-monitoring.visit_monitoring.table'), ['page' => route('user-monitoring.visits-monitoring')]);
 });
