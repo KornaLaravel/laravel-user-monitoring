@@ -20,6 +20,8 @@ class VisitMonitoringController extends BaseController
             ->where('id', $id)
             ->delete();
 
-        return to_route('user-monitoring.visits-monitoring');
+        return to_route('user-monitoring.visits-monitoring')->with([
+            'message' => 'The action has been deleted.',
+        ]);
     }
 }
