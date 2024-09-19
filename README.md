@@ -413,9 +413,9 @@ The changelog can be found in the `CHANGELOG.md` file of the GitHub repository. 
 <a name="license"></a>
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/binafy/laravel-user-monitoring/blob/0.x-dev/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/binafy/laravel-user-monitoring/blob/1.x/LICENSE) for more information.
 
 <a name="conclusion"></a>
 ## Conclusion
 
-Congratulations! You have successfully installed and integrated the Laravel User Monitoring package into your Laravel application. By effectively logging and analyzing user activity, you can gain valuable insights that can help you improve your application's user experience and performance. If you have any questions or need further assistance, feel free to refer to the documentation or seek help from the package's GitHub repository. Happy monitoring!
+Congratulations! You have successfully installed and integrated the Laravel User Monitoring package into your Laravel application. By effectively logging and analyzing user activity, you can gain valuable insights that can help you improve your application's user experience and performance. If you have any questions or need further assistance, please refer to the documentation or seek help from the package's GitHub repository. Happy monitoring!
