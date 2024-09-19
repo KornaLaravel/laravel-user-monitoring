@@ -69,7 +69,9 @@ return [
          * You can specify pages not to be monitored.
          */
         'except_pages' => [
-            // 'home',
+             'user-monitoring/visits-monitoring',
+             'user-monitoring/actions-monitoring',
+             'user-monitoring/authentications-monitoring',
         ],
 
         /*
