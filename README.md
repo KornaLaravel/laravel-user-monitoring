@@ -95,7 +95,10 @@ After publishing, run the `php artisan migrate` command.
 <a name="usage"></a>
 ## Usage
 
-The `Laravel-User-Monitoring`, just need to use middleware, traits, etc ... and it's not hard, enjoys :)
+The `Laravel-User-Monitoring`, need to use middleware, traits, etc ... and it's not hard, enjoys :)
+
+<a name="configuration"></a>
+## Configuration
 
 <a name="routes-configuration"></a>
 ## Routes Configuration
