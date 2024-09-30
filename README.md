@@ -29,6 +29,7 @@
 - [Security](#security)
 - [Changelog](#changelog)
 - [License](#license)
+- [Star History](#start-history)
 - [Conclusion](#conclusion)
 
 <a name="introduction"></a>
@@ -414,6 +415,11 @@ The changelog can be found in the `CHANGELOG.md` file of the GitHub repository. 
 ## License
 
 The MIT License (MIT). Please see [License File](https://github.com/binafy/laravel-user-monitoring/blob/1.x/LICENSE) for more information.
+
+<a name="start-history"></a>
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=binafy/laravel-user-monitoring&type=Date)](https://star-history.com/#binafy/laravel-user-monitoring&Date)
 
 <a name="conclusion"></a>
 ## Conclusion
