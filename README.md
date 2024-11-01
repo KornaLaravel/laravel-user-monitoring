@@ -31,6 +31,7 @@
 - [License](#license)
 - [Star History](#start-history)
 - [Conclusion](#conclusion)
+- (Donate)(#donate)
 
 <a name="introduction"></a>
 ## Introduction
@@ -428,3 +429,12 @@ The MIT License (MIT). Please see [License File](https://github.com/binafy/larav
 ## Conclusion
 
 Congratulations! You have successfully installed and integrated the Laravel User Monitoring package into your Laravel application. By effectively logging and analyzing user activity, you can gain valuable insights that can help you improve your application's user experience and performance. If you have any questions or need further assistance, please refer to the documentation or seek help from the package's GitHub repository. Happy monitoring!
+
+<a name="donate"></a>
+## Donate
+
+If this package is helpful for you, you can buy a coffee for me :) ❤️
+
+- Iraninan Gateway: https://daramet.com/milwad_khosravi
+- Paypal Gateway: SOON
+- MetaMask Address: `0xf208a562c5a93DEf8450b656c3dbc1d0a53BDE58`
