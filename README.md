@@ -31,7 +31,7 @@
 - [License](#license)
 - [Star History](#start-history)
 - [Conclusion](#conclusion)
-- (Donate)(#donate)
+- [Donate](#donate)
 
 <a name="introduction"></a>
 ## Introduction
