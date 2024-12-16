@@ -13,7 +13,7 @@ return [
     /*
      * User properties.
      *
-     * You can customize the user guard, table, foreign key, and ... .
+     * You can customize the user guard, table, foreign key, and ...
      */
     'user' => [
         /*
@@ -39,12 +39,12 @@ return [
         /*
          * If you are using uuid or ulid you can change it for the type of foreign_key.
          *
-         * When you are using ulid or uuid, you need to add related traits into the models.
+         * When using ulid or uuid, you need to add related traits into the models.
          */
         'foreign_key_type' => 'id', // uuid, ulid, id
 
         /*
-         * If you want to display custom username, you can create your own attribute in User and change this value.
+         * If you want to display a custom username, you can create your attribute in User and change this value.
          */
         'display_attribute' => 'name',
     ],
@@ -76,7 +76,7 @@ return [
 
         /*
          * If you want to delete visit rows after some days, you can change this to 360 for example,
-         * but you don't like to delete rows you can change it to 0.
+         * but if you don't like to delete rows you can change it to 0.
          *
          * For this feature you need Task-Scheduling => https://laravel.com/docs/10.x/scheduling
          */
@@ -88,6 +88,7 @@ return [
      */
     'action_monitoring' => [
         'table' => 'actions_monitoring',
+
         /*
          * Monitor actions.
          *
