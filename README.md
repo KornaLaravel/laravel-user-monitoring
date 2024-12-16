@@ -319,7 +319,7 @@ When set to false, Ajax requests will not be recorded.
 <a name="action-monitoring"></a>
 ## Action Monitoring
 
-If you want to monitor your models actions, you can use the `Actionable` trait in your model:
+If you want to monitor your model actions, you can use the `Actionable` trait in your model:
 
 ```php
 <?php
@@ -385,7 +385,7 @@ If you want to monitor users when logging in or logout of your application, you 
 <a name="action-monitoring-reverse-proxy-config"></a>
 ### Action Monitoring Reverse Proxy Config
 
-If you are using Reverse Proxy (Nginx or Cloudflare), you can use config to get real ip from specifc header like `X-Real-IP` or `X-Forwarded-For`:
+If you are using Reverse Proxy (Nginx or Cloudflare), you can use config to get real IP from a specific header like `X-Real-IP` or `X-Forwarded-For`:
 
 ```php
 /** 
@@ -400,14 +400,14 @@ If you are using Reverse Proxy (Nginx or Cloudflare), you can use config to get 
 <a name="authentication-monitoring-views"></a>
 ### Authentication Monitoring Views
 
-`Laravel-User-Monitoring` also has amazing views that you can use very easily, just need to go to the `/user-monitoring/authentications-monitoring` URL, and enjoy:
+`Laravel-User-Monitoring` also has amazing views that you can use very easily, need to go to the `/user-monitoring/authentications-monitoring` URL, and enjoy:
 
 ![Authentication Monitoring Preview](/art/authentications-monitoring/preview.png "Authentication Monitoring")
 
 <a name="how-to-use-in-big-projects"></a>
 ## How to use in big projects
 
-If you want to use `Laravel-User-Monitoring` is big projects, you have lots of ways, but I want to give some tips and ideas to help you:
+If you want to use `Laravel-User-Monitoring` for big projects, you have lots of ways, but I want to give some tips and ideas to help you:
 
 > If you have an idea for this section you can create [PRs](https://github.com/binafy/laravel-user-monitoring/pulls) or [issues](https://github.com/binafy/laravel-user-monitoring/issues) to help us.
 
