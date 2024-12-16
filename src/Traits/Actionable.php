@@ -73,10 +73,20 @@ trait Actionable
             'browser_name' => $detector->getBrowser(),
             'platform' => $detector->getDevice(),
             'device' => $detector->getDevice(),
-            'ip' => request()->ip(),
+            'ip' => $this->getRealIP(),
             'page' => request()->url(),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+    }
+
+    /**
+     * Get real ip.
+     */
+    private function getRealIP(): string
+    {
+        return config('user-monitoring.use_reverse_proxy_ip') 
+                ? request()->header(config('user-monitoring.real_ip_header')) ?: request()->ip() ?: request()->ip()
+                : request()->ip();
     }
 }
