@@ -88,7 +88,6 @@ return [
      */
     'action_monitoring' => [
         'table' => 'actions_monitoring',
-
         /*
          * Monitor actions.
          *
@@ -100,6 +99,14 @@ return [
         'on_read'       => true,
         'on_restore'    => false,
         'on_replicate'  => false,
+        
+        /** 
+        *   Determines if the application should use reverse proxy headers to fetch the real client IP
+        *   If set to true, it will try to get the IP from the specified header (X-Real-IP or X-Forwarded-For)
+        *   This is useful when using reverse proxies like Nginx or Cloudflare.
+         */
+        'use_reverse_proxy_ip' => false,
+        'real_ip_header' => 'X-Forwarded-For'
     ],
 
     /*

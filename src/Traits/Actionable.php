@@ -73,7 +73,11 @@ trait Actionable
             'browser_name' => $detector->getBrowser(),
             'platform' => $detector->getDevice(),
             'device' => $detector->getDevice(),
-            'ip' => request()->ip(),
+            'ip' => config('user-monitoring.use_reverse_proxy_ip') 
+            ? request()->header(config('user-monitoring.real_ip_header')) 
+                ?: request()->ip() 
+                ?: request()->ip()
+            : request()->ip(),,
             'page' => request()->url(),
             'created_at' => now(),
             'updated_at' => now(),
