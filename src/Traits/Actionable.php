@@ -63,7 +63,7 @@ trait Actionable
      */
     private static function insertActionMonitoring(mixed $model, string $actionType): void
     {
-        $detector = new Detector();
+        $detector = new Detector;
         $guard = config('user-monitoring.user.guard');
 
         DB::table(config('user-monitoring.action_monitoring.table'))->insert([
@@ -73,7 +73,7 @@ trait Actionable
             'browser_name' => $detector->getBrowser(),
             'platform' => $detector->getDevice(),
             'device' => $detector->getDevice(),
-            'ip' => $this->getRealIP(),
+            'ip' => self::getRealIP(),
             'page' => request()->url(),
             'created_at' => now(),
             'updated_at' => now(),
@@ -83,10 +83,10 @@ trait Actionable
     /**
      * Get real ip.
      */
-    private function getRealIP(): string
+    private static function getRealIP(): string
     {
-        return config('user-monitoring.use_reverse_proxy_ip') 
-                ? request()->header(config('user-monitoring.real_ip_header')) ?: request()->ip() ?: request()->ip()
+        return config('user-monitoring.use_reverse_proxy_ip')
+                ? request()->header(config('user-monitoring.real_ip_header')) ?: request()->ip()
                 : request()->ip();
     }
 }
