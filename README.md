@@ -22,6 +22,7 @@
         - [Ajax Requests](#ajax-requests)
     - [Action Monitoring](#action-monitoring)
         - [Views](#action-monitoring-views)
+        - [Reverse Proxy Config](#action-monitoring-reverse-proxy-config)
     - [Authentication Monitoring](#authentication-monitoring)
         - [Views](#authentication-monitoring-views)
     - [How to use in big projects](#how-to-use-in-big-projects)
@@ -379,6 +380,21 @@ If you want to monitor users when logging in or logout of your application, you 
     'on_login' => true,
     'on_logout' => true,
 ],
+```
+
+<a name="action-monitoring-reverse-proxy-config"></a>
+### Action Monitoring Reverse Proxy Config
+
+If you are using Reverse Proxy (Nginx or Cloudflare), you can use config to get real ip from specifc header like `X-Real-IP` or `X-Forwarded-For`:
+
+```php
+/** 
+*   Determines if the application should use reverse proxy headers to fetch the real client IP
+*   If set to true, it will try to get the IP from the specified header (X-Real-IP or X-Forwarded-For)
+*   This is useful when using reverse proxies like Nginx or Cloudflare.
+ */
+'use_reverse_proxy_ip' => true,
+'real_ip_header' => 'X-Forwarded-For',
 ```
 
 <a name="authentication-monitoring-views"></a>
