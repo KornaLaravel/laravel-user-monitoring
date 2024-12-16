@@ -1,3 +1,15 @@
+## v1.1.5 - 2024-12-16
+
+### What's Changed
+
+* [1.x] Fix IP address retrieval when using reverse proxy by [@mahdibashirpour](https://github.com/mahdibashirpour) in https://github.com/binafy/laravel-user-monitoring/pull/49
+
+### New Contributors
+
+* [@mahdibashirpour](https://github.com/mahdibashirpour) made their first contribution in https://github.com/binafy/laravel-user-monitoring/pull/49
+
+**Full Changelog**: https://github.com/binafy/laravel-user-monitoring/compare/v1.1.4...v1.1.5
+
 ## v1.1.4 - 2024-09-19
 
 ### What's Changed
